@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet("/demo1")
+@WebServlet("/login")
 public class servletDemo1 implements Servlet {
 
 
