@@ -11,7 +11,6 @@ import java.io.PrintWriter;
 @WebServlet("/login")
 public class servletDemo1 implements Servlet {
 
-
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         // System.out.println("servlet hello world~~");
@@ -32,7 +31,6 @@ public class servletDemo1 implements Servlet {
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
     }
 
     @Override
@@ -47,6 +45,5 @@ public class servletDemo1 implements Servlet {
 
     @Override
     public void destroy() {
-
     }
 }
