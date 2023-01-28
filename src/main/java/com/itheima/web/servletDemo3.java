@@ -2,16 +2,13 @@ package com.itheima.web;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
- * servlet 生命周期方法
+ * servlet 方法介绍
  */
-@WebServlet(urlPatterns = "/demo2", loadOnStartup = 1)
-public class servletDemo2 implements Servlet {
+@WebServlet(urlPatterns = "/demo3", loadOnStartup = 1)
+public class servletDemo3 implements Servlet {
 
     /**
      * 初始化方法
@@ -55,14 +52,12 @@ public class servletDemo2 implements Servlet {
     }
 
     @Override
-    public ServletConfig getServletConfig() {
-        return null;
+    public String getServletInfo() {
+        return "";
     }
 
     @Override
-    public String getServletInfo() {
+    public ServletConfig getServletConfig() {
         return null;
     }
-
-
 }
