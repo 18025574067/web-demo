@@ -24,7 +24,7 @@ public class ServletDemo3 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
         this.config = config;
-        System.out.println("init...");
+        System.out.println("init... ...");
     }
 
     @Override
