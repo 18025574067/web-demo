@@ -5,37 +5,31 @@ import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 
 /**
- * servlet 方法介绍
+ * servlet 生命周期方法
  */
-@WebServlet(urlPatterns = "/demo3", loadOnStartup = 1)
-public class servletDemo3 implements Servlet {
-    private ServletConfig config;
+@WebServlet(urlPatterns = "/demo2", loadOnStartup = 1)
+public class ServletDemo2 implements Servlet {
 
     /**
      * 初始化方法
      * 1. 调用时机：默认情况下，Servlet第一次被访问时，会被调用
-     * * loadOnStartup: -1表示是默认情况，第一次被访问时，才会被调用。
-     * *               0 或者是 正整数 代表服务器开启就调用了。
+     *      * loadOnStartup: -1表示是默认情况，第一次被访问时，才会被调用。
+     *      *               0 或者是 正整数 代表服务器开启就调用了。
      * 2. 调用次数：1次。
-     *
      * @param servletConfig
      * @throws ServletException
      */
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-        this.config = config;
         System.out.println("init...");
     }
 
-    @Override
-    public ServletConfig getServletConfig() {
-        return config;
-    }
-
     /**
+     *
      * 提供服务：
      * 1. 调用时机：每一次servlet被访问时，调用
      * 2. 调用次数：多次。
+     *
      *
      * @param servletRequest
      * @param servletResponse
@@ -58,7 +52,14 @@ public class servletDemo3 implements Servlet {
     }
 
     @Override
-    public String getServletInfo() {
-        return "";
+    public ServletConfig getServletConfig() {
+        return null;
     }
+
+    @Override
+    public String getServletInfo() {
+        return null;
+    }
+
+
 }

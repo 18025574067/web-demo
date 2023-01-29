@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 
 
 @WebServlet("/login")
-public class servletDemo1 implements Servlet {
+public class ServletDemo1 implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
