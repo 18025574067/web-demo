@@ -26,11 +26,9 @@ public class MyHttpServlet implements Servlet {
         // 2. 判断
         if ("GET".equals(method)){
             // get方式的处理逻辑
-            System.out.println("GET。。。");
             doGet(req, res);
         }else if ("POST".equals(method)){
             // post方式的处理逻辑
-            System.out.println("POST。。。");
             doPost(req, res);
         }
     }

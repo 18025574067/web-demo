@@ -26,10 +26,8 @@ public class ServletDemo5 implements Servlet {
         // 2. 判断
         if ("GET".equals(method)){
             // get方式的处理逻辑
-            System.out.println("GET。。。");
         }else if ("POST".equals(method)){
             // post方式的处理逻辑
-            System.out.println("POST。。。");
         }
     }
 
