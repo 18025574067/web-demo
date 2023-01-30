@@ -7,7 +7,6 @@ import java.io.IOException;
 public class ServletDemo5 implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
     }
 
     @Override
