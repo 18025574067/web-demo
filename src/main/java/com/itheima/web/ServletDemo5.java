@@ -27,18 +27,10 @@ public class ServletDemo5 implements Servlet {
         if ("GET".equals(method)){
             // get方式的处理逻辑
             System.out.println("GET。。。");
-            doGet(req, res);
         }else if ("POST".equals(method)){
             // post方式的处理逻辑
             System.out.println("POST。。。");
-            doPost(req, res);
         }
-    }
-
-    protected void doPost(ServletRequest req, ServletResponse res) {
-    }
-
-    protected void doGet(ServletRequest req, ServletResponse res) {
     }
 
     @Override
