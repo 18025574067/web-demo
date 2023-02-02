@@ -9,13 +9,14 @@ import java.io.IOException;
 
 /**
  * urlPattern:
- * 目录匹配 /user/*
+ * 扩展名匹配 *.do
  */
-@WebServlet(urlPatterns = "/user/*")
-public class ServletDemo9 extends HttpServlet {
+//@WebServlet(urlPatterns = "/*.do")
+@WebServlet(urlPatterns = "*.do")
+public class ServletDemo10 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("demo9 get...");
+        System.out.println("demo10 get...");
     }
 
     @Override
