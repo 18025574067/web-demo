@@ -4,4 +4,21 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <!-- servlet 全类名 -->
+  <servlet>
+    <servlet-name>demo13</servlet-name>
+    <servlet-class>com.itheima.web.ServletDemo13</servlet-class>
+  </servlet>
+
+  <!-- servlet 访问路径 -->
+  <servlet-mapping>
+    <servlet-name>demo13</servlet-name>
+    <url-pattern>/demo13</url-pattern>
+
+  </servlet-mapping>
+
+
+
+
 </web-app>
